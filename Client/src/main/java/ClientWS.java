@@ -7,8 +7,8 @@ public class ClientWS {
         BanqueService stub = new BanqueWS().getBanqueServicePort();
         System.out.println(stub.conversionEuroToDH(1));
         Compte c = stub.getCompte(1);
-        System.out.println(c.getCode());
-        System.out.println(c.getSolde());
-        System.out.println(c.getDateCreation());
+        System.out.println("Compte : "+c.getCode());
+        System.out.println("Solde : "+c.getSolde());
+        System.out.println("Date de creation : "+c.getDateCreation());
     }
 }
